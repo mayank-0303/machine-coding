@@ -1,0 +1,12 @@
+.folder {
+  padding: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.folder-name {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  border-left: 3px solid black;
+}
