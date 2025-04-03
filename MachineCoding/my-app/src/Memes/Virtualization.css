@@ -1,0 +1,18 @@
+.v-container {
+  text-align: center;
+}
+
+.scrollable-block {
+  height: 600px;
+  border: 2px solid black;
+  overflow-y: auto;
+}
+
+.v-item {
+  height: 60px;
+  /* border: 1px solid black; */
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -7,6 +7,8 @@ import Loader from "./Common/Loader";
 import ProtectedAuth from "./Auth/ProtectedAuth";
 import Misc from "./MiscComponents/Misc";
 import JiraBoard from "./JiraBoard.jsx/JiraBoard";
+import Memes from "./Memes/Memes";
+import Virtualization from "./Memes/Virtualization";
 
 const Hooks = lazy(() => import("./Hooks/Hooks"));
 function App() {
@@ -29,6 +31,8 @@ function App() {
             />
           </Route>
           <Route path="/jira-board" element={<JiraBoard />} />
+          <Route path="/memes" element={<Memes />} />
+          <Route path="/virtual" element={<Virtualization />} />
           <Route path="/misc" element={<Misc />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>

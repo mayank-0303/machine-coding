@@ -17,6 +17,12 @@ const TopBar = () => {
           <NavLink to="/jira-board" className={`nav-item`}>
             Jira Board
           </NavLink>
+          <NavLink to="/memes" className={`nav-item`}>
+            Memes
+          </NavLink>
+          <NavLink to="/virtual" className={`nav-item`}>
+            Virtualization
+          </NavLink>
           <NavLink to="/misc" className={`nav-item`}>
             Misc
           </NavLink>
