@@ -7,7 +7,7 @@ const ProgressBar = ({ progress }) => {
   useEffect(() => {
     // setTimeout(() => setthiss(progress), 100);
     setthiss(progress);
-  }, []);
+  }, [progress]);
   return (
     <div className="container">
       <div
