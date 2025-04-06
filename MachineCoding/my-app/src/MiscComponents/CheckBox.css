@@ -1,0 +1,9 @@
+.checkbox-container {
+  padding-left: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.checkox-block:hover {
+  cursor: pointer;
+}

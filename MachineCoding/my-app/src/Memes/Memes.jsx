@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Memes.css";
+import img from "./full_moon.svg";
 
 // most important
 // document.addEventListener("scroll", handleScroll); as i was addding to document.body and it doesnot work
@@ -64,6 +65,8 @@ const Memes = () => {
   }
   return (
     <div className="memes-section">
+      <h5>Static image for build purpose</h5>
+      <img src={img} width={`300px`} alt="" />
       <h2>Memes</h2>
       <div className="memes-container">
         {memes.map((meme, i) => (
