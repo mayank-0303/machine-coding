@@ -9,6 +9,7 @@ import img from "./full_moon.svg";
 const Memes = () => {
   const [memes, setMemes] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [stopLoading, setStopLoading] = useState(false);
   const loadingRef = useRef();
 
   useEffect(() => {
@@ -59,6 +60,7 @@ const Memes = () => {
       const { count, memes } = await res.json();
       setMemes((oldMemes) => [...oldMemes, ...memes]);
     } catch (e) {
+      setStopLoading(true);
     } finally {
       setLoading(false);
     }
@@ -76,6 +78,7 @@ const Memes = () => {
           </div>
         ))}
         {loading &&
+          !stopLoading &&
           Array.from({ length: 10 }).map((s, i) => (
             <div className="meme-section-skeleton" key={i}></div>
           ))}
