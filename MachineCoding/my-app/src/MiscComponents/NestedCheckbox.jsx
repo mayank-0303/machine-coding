@@ -1,48 +1,44 @@
 import React, { useState } from "react";
 import Checkbox from "./Checkbox";
 
+// its a way to show [-] in checkbox (remember this property can only be said by js not html attribute)
+//const checkbox = document.getElementById("indeterminate-checkbox");
+//checkbox.indeterminate = true;
+
 const checkData = [
   {
     id: "1",
     name: "CheckBox 1",
-    checked: false,
   },
   {
     id: "2",
     name: "CheckBox 2",
-    checked: false,
     children: [
       {
         id: "21",
         name: "CheckBox 21",
-        checked: false,
       },
       {
         id: "22",
         name: "CheckBox 22",
-        checked: false,
         children: [
           {
             id: "221",
             name: "CheckBox 221",
-            checked: false,
           },
           {
             id: "222",
             name: "CheckBox 222",
-            checked: false,
           },
           {
             id: "223",
             name: "CheckBox 223",
-            checked: false,
           },
         ],
       },
       {
         id: "23",
         name: "CheckBox 23",
-        checked: false,
       },
     ],
   },
@@ -75,7 +71,7 @@ const NestedCheckbox = () => {
         let allChildCheckedCount = 0;
         newobj.forEach((x) => {
           const checked = cc(x, id, forced);
-          if (checked) allChildCheckedCount++;
+          if (checked === "checked") allChildCheckedCount++;
         });
 
         return allChildCheckedCount;
@@ -90,14 +86,31 @@ const NestedCheckbox = () => {
         } else {
           // if force is not present
           if (id === newobj.id) {
-            newState[newobj.id] = !newState[newobj.id];
+            if (
+              newState[newobj.id] == undefined ||
+              newState[newobj.id] == "unchecked" ||
+              newState[newobj.id] == "indeterminate"
+            ) {
+              newState[newobj.id] = "checked";
+            } else {
+              newState[newobj.id] = "unchecked";
+            }
+            // newState[newobj.id] = !newState[newobj.id];
             force = newState[newobj.id];
           }
         }
         if (newobj.children) {
           const allChildCheckedCount = cc(newobj.children, id, force);
 
-          newState[newobj.id] = allChildCheckedCount == newobj.children.length;
+          if (allChildCheckedCount == newobj.children.length) {
+            newState[newobj.id] = "checked";
+          } else if (allChildCheckedCount === 0) {
+            newState[newobj.id] = "unchecked";
+          } else {
+            newState[newobj.id] = "indeterminate";
+          }
+
+          // newState[newobj.id] = allChildCheckedCount == newobj.children.length;
         }
         return newState[newobj.id];
       }
