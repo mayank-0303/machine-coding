@@ -1,13 +1,100 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/crescent-moon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moon</title>
+
+
+    <link rel="icon" type="image/svg+xml" href="/crescent-moon.svg" />
+    <!--<link rel="manifest" href="/manifest.json">-->
+
+    <meta charset="UTF-8" /><!-- generlly this is on top so browser knows utf8 above -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A coder from moon" />
+    <meta name="keywords" content="react, vite, nodejs, frontend, hooks" />
+    <meta name="theme-color" content="#0f0f0f" />
+
+    <meta property="og:title" content="Facebook special title" />
+    <meta property="og:description" content="Facebook special description" />
+
+    <meta name="robots" content="index, follow" />
+
+    <!--<base href="/something"> -->
+
+    <style>
+      .moon {
+        color: white;
+      }
+    </style>
+
+    <script async defer>
+      console.log('script loaded')
+    </script>
+
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
+
+
+<!--
+
+  0. lang="en" => "This page is in English", Helps screen readers, translators, spellcheckers, and search engines
+
+  1. title is used to defines the title of the document
+
+  2.Link tag is super important => 
+   using rel i tell the relationship between the current document and an external resource
+
+  3. meta tag uses name and content =>  Helps with SEO, social sharing, encoding, responsive design
+
+    # name="viewport" =>
+      initial-scale=1.0:
+      Sets the default zoom level (100%).
+
+      With width=device-width:
+      Sets the viewport(page) width to match the screen width (i decrease the css width(300px) of the page only , so now rather(1000px) of wide page only 300px is shown on screen
+      so automatically the the div of 200 px will start to become large and readable)
+
+      The layout fits within 300px
+      Everything scales and flows nicely
+
+      Without it:
+      The browser acts like the screen is 980px wide (which is wrong)
+      So your site shrinks down to fit that fake width into 300px, making everything tiny
+
+    -----------
+    # name="description" => Shows up in Google search results as the snippet
+
+    # name="keywords" => Used for SEO in the past, but mostly ignored by modern search engines.
+  
+    # name="theme-color" => Sets the browser's address bar color on mobile browsers, Makes your PWA feel more native
+
+    # property="og:title" => Used by Facebook, LinkedIn, etc. to show rich previews when a link is shared
+
+    # name="robots" content="index, follow" => 
+      index	✅ Allow this page to be included in search results (aka indexed)
+      follow	✅ Allow search engines to follow links on this page and crawl them too
+
+      content="noindex, nofollow"(Useful for: Admin pages,Login pages)
+
+         ==> i had a follow up question for SPA(how will this work here)
+         -----SPA = only 1 index.html, so meta tags there are global
+              For route-level control, update tags dynamically in JS using react-helmet
+              still Search engine bots don’t always run JavaScript reliably (especially lesser ones).
+              So client-side meta tags may be ignored if you’re not using SSR (like Next.js)
+              as in ssr we will get full new rendered html so good for this scenrio for web crawlers
+
+      => Default is usually index, follow, but being explicit is good practice
+
+      you can also limit crawling with robots.txt (read in notes taught by chirag)
+
+    # charset="UTF-8" Sets the text encoding to UTF-8 = supports all characters correctly
+
+  4. The <script> element is used to define client-side JavaScripts. also have style in head
+  5. The <base> tag sets a base URL for all relative links and assets in your page.
+
+
+  -->

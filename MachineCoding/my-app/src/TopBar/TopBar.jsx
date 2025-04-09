@@ -23,6 +23,9 @@ const TopBar = () => {
           <NavLink to="/virtual" className={`nav-item`}>
             Virtualization
           </NavLink>
+          <NavLink to="/animation" className={`nav-item`}>
+            Animate
+          </NavLink>
           <NavLink to="/misc" className={`nav-item`}>
             Misc
           </NavLink>

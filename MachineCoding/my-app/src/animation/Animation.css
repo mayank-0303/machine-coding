@@ -1,0 +1,59 @@
+.animation-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.transform-block {
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  transition: linear transform 5s;
+}
+
+.animate-block {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  animation-name: square;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes square {
+  0% {
+    background-color: red;
+  }
+  25% {
+    transform: translateX(-300px);
+    background-color: yellow;
+  }
+  50% {
+    transform: translateY(300px) translateX(-300px);
+    background-color: blue;
+  }
+  75% {
+    background-color: palevioletred;
+    transform: translateY(+300px);
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.shift {
+  transform: translateY(300px);
+}
+
+.display-grid {
+  margin-top: 500px;
+  display: grid;
+  width: 100%;
+  height: 500px;
+  grid-template-columns: 50% 20% 20% auto;
+  grid-template-rows: 50% 20% auto 10%;
+}
+.display-item {
+  border: 1px solid black;
+  background-color: rgb(175, 120, 226);
+}
