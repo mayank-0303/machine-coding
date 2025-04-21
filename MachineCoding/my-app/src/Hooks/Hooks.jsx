@@ -12,8 +12,9 @@ import React, {
 import { useParams } from "react-router";
 import Child from "./Child";
 import HighComputation from "./HighComputation";
+import CustomHook from "./CustomHook";
 
-const ThemeContext = createContext({});
+export const ThemeContext = createContext({});
 
 const reducer = (state, action) => {
   switch (action) {
@@ -123,9 +124,13 @@ const Hooks = () => {
       useTransition = when we are computing real alot of data between rerender
       rather than showing the frozen screen we can optimize that
       <HighComputation />
+      <div>
+        <b>Custom hooks </b>
+        <CustomHook />
+        <br />
+      </div>
     </div>
   );
 };
 
-export { ThemeContext };
 export default Hooks;
