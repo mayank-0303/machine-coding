@@ -1,0 +1,33 @@
+.image-carosel-container {
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-carosel-container .scrollabel {
+  height: 100%;
+  display: flex;
+  transition: transform 1s;
+}
+
+.image-carosel-container .image {
+  flex: 0 0 100%;
+  object-fit: fill;
+}
+
+.image-carosel-container .shifter {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.image-carosel-container .shifter .shift-circle {
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Checkbox from "./Checkbox";
 
-// its a way to show [-] in checkbox (remember this property can only be said by js not html attribute)
+// its a way to show [-] in checkbox (remember this property can only be set by js not html attribute)
 //const checkbox = document.getElementById("indeterminate-checkbox");
 //checkbox.indeterminate = true;
 
@@ -62,63 +62,104 @@ const checkData = [
 const NestedCheckbox = () => {
   const [ischeck, setisCheckedInfo] = useState({});
 
+  // function changeCh(id) {
+  //   const newState = { ...ischeck };
+
+  //   function cc(newobj, id, forced = null) {
+  //     // Handle Array
+  //     if (Array.isArray(newobj)) {
+  //       let allChildCheckedCount = 0;
+  //       newobj.forEach((x) => {
+  //         const checked = cc(x, id, forced);
+  //         if (checked === "checked") allChildCheckedCount++;
+  //       });
+
+  //       return allChildCheckedCount;
+  //     }
+  //     // Handle Object
+  //     if (typeof newobj === "object" && newobj != null) {
+  //       let force = null;
+  //       // force concept is used to handle children if parent is updated
+  //       if (forced !== null) {
+  //         newState[newobj.id] = forced;
+  //         force = forced;
+  //       } else {
+  //         // if force is not present
+  //         if (id === newobj.id) {
+  //           if (
+  //             newState[newobj.id] == undefined ||
+  //             newState[newobj.id] == "unchecked" ||
+  //             newState[newobj.id] == "indeterminate"
+  //           ) {
+  //             newState[newobj.id] = "checked";
+  //           } else {
+  //             newState[newobj.id] = "unchecked";
+  //           }
+  //           // newState[newobj.id] = !newState[newobj.id];
+  //           force = newState[newobj.id];
+  //         }
+  //       }
+  //       if (newobj.children) {
+  //         const allChildCheckedCount = cc(newobj.children, id, force);
+
+  //         if (allChildCheckedCount == newobj.children.length) {
+  //           newState[newobj.id] = "checked";
+  //         } else if (allChildCheckedCount === 0) {
+  //           newState[newobj.id] = "unchecked";
+  //         } else {
+  //           newState[newobj.id] = "indeterminate";
+  //         }
+
+  //         // newState[newobj.id] = allChildCheckedCount == newobj.children.length;
+  //       }
+  //       return newState[newobj.id];
+  //     }
+  //   }
+
+  //   cc(checkData, id);
+
+  //   setisCheckedInfo(newState);
+  // }
+
   function changeCh(id) {
-    const newState = { ...ischeck };
+    const newCheckObj = { ...ischeck };
 
-    function cc(newobj, id, forced = null) {
-      // Handle Array
-      if (Array.isArray(newobj)) {
-        let allChildCheckedCount = 0;
-        newobj.forEach((x) => {
-          const checked = cc(x, id, forced);
-          if (checked === "checked") allChildCheckedCount++;
+    const recurssionFn = (folder, force, value) => {
+      if (Array.isArray(folder)) {
+        let status = true;
+        folder.forEach((item) => {
+          if (!recurssionFn(item, force, value)) {
+            status = false;
+          }
         });
-
-        return allChildCheckedCount;
+        return status;
       }
-      // Handle Object
-      if (typeof newobj === "object" && newobj != null) {
-        let force = null;
-        // force concept is used to handle children if parent is updated
-        if (forced !== null) {
-          newState[newobj.id] = forced;
-          force = forced;
-        } else {
-          // if force is not present
-          if (id === newobj.id) {
-            if (
-              newState[newobj.id] == undefined ||
-              newState[newobj.id] == "unchecked" ||
-              newState[newobj.id] == "indeterminate"
-            ) {
-              newState[newobj.id] = "checked";
-            } else {
-              newState[newobj.id] = "unchecked";
-            }
-            // newState[newobj.id] = !newState[newobj.id];
-            force = newState[newobj.id];
-          }
-        }
-        if (newobj.children) {
-          const allChildCheckedCount = cc(newobj.children, id, force);
 
-          if (allChildCheckedCount == newobj.children.length) {
-            newState[newobj.id] = "checked";
-          } else if (allChildCheckedCount === 0) {
-            newState[newobj.id] = "unchecked";
-          } else {
-            newState[newobj.id] = "indeterminate";
-          }
+      if (typeof folder === "object" && folder !== null) {
+        let status = newCheckObj[folder.id];
+        let forceChild = false;
 
-          // newState[newobj.id] = allChildCheckedCount == newobj.children.length;
+        if (force) {
+          status = value;
+          forceChild = force;
+        } else if (id === folder.id) {
+          status = !status;
+          forceChild = true;
+          value = status;
         }
-        return newState[newobj.id];
+
+        if (folder.children) {
+          status = recurssionFn(folder.children, forceChild, value);
+        }
+
+        newCheckObj[folder.id] = status;
+        return status;
       }
-    }
+    };
 
-    cc(checkData, id);
-
-    setisCheckedInfo(newState);
+    recurssionFn(checkData);
+    console.log(newCheckObj);
+    setisCheckedInfo(newCheckObj);
   }
 
   return (

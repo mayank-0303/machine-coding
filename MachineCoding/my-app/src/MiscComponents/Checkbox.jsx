@@ -26,19 +26,19 @@ const Checkbox = ({ checkInfo, changeCh, ischeck }) => {
 function CheckInput({ id, ischeck, changeCh }) {
   const checkBoxRef = useRef();
 
-  useEffect(() => {
-    if (ischeck[id] === "indeterminate")
-      checkBoxRef.current.indeterminate = true;
-    else checkBoxRef.current.indeterminate = false;
-  }, [ischeck]);
+  // useEffect(() => {
+  //   if (ischeck[id] === "indeterminate")
+  //     checkBoxRef.current.indeterminate = true;
+  //   else checkBoxRef.current.indeterminate = false;
+  // }, [ischeck]);
 
-  const checked = ischeck[id] === "checked" ? true : false;
+  const checked = ischeck[id];
   return (
     <input
       id={id}
       ref={checkBoxRef}
       type="checkbox"
-      checked={checked}
+      checked={!!checked}
       onChange={() => changeCh(id)}
     />
   );

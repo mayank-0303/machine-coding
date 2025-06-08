@@ -5,6 +5,7 @@ import TopBar from "./TopBar/TopBar";
 import Loader from "./Common/Loader";
 import ProtectedAuth from "./Auth/ProtectedAuth";
 import Animation from "./animation/Animation";
+import Todo from "./TodoPage/Todo";
 
 const Home = lazy(() => import("./Home/Home"));
 const Hooks = lazy(() => import("./Hooks/Hooks"));
@@ -27,6 +28,7 @@ function App() {
             <Route path="/memes" element={<Memes />} />
             <Route path="/virtual" element={<Virtualization />} />
             <Route path="/animation" element={<Animation />} />
+            <Route path="/todo" element={<Todo />} />
             <Route path="/misc" element={<Misc />} />
             <Route path="*" element={<Navigate to="/home" />} />
           </Routes>

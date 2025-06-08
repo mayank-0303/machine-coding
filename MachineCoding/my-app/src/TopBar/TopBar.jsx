@@ -26,6 +26,9 @@ const TopBar = () => {
           <NavLink to="/animation" className={`nav-item`}>
             Animate
           </NavLink>
+          <NavLink to="/todo" className={`nav-item`}>
+            Todo list
+          </NavLink>
           <NavLink to="/misc" className={`nav-item`}>
             Misc
           </NavLink>

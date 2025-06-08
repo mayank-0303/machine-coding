@@ -20,6 +20,7 @@ const AutoCompleteInput = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // this is deboucing with useEffect
   useEffect(() => {
     //remember useEffect is synchronous we cannot call api here with async await
     const timeoutId = setTimeout(() => fetchSearchResult(search.trim()), 500);

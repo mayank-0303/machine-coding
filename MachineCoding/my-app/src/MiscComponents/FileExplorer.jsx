@@ -95,62 +95,56 @@ const fileContext = createContext();
 const FileExplorer = () => {
   const [fileData, setFileData] = useState(initialFileData);
 
-  const deleteFolderNode = (id) => {
-    const newfileData = removeNode(fileData, id);
-    setFileData(newfileData);
-  };
-  const removeNode = (item, id) => {
-    if (Array.isArray(item)) {
-      const newArray = [];
-      item.forEach((i) => {
-        const xx = removeNode(i, id);
-        if (xx !== null) newArray.push(xx);
-      });
-      return newArray;
-    }
-    if (typeof item === "object" && item !== null) {
-      const newObj = { ...item };
-      if (item.id === id) {
-        return null;
+  function deleteFolderNode(id) {
+    const recurssionFn = (folder) => {
+      if (Array.isArray(folder)) {
+        return folder.filter((f) => recurssionFn(f).id !== id);
       }
-      if (item.children) {
-        newObj.children = removeNode(item.children, id);
-      }
-      return newObj;
-    }
-  };
 
-  const addFolderNode = (id) => {
-    const newfileData = addNode(
-      fileData,
-      {
-        id: "ad" + Math.random() * 1000,
-        name: "NEWLY ADDED FOLDER",
-      },
-      id
-    );
-    setFileData(newfileData);
-  };
-  const addNode = (item, nFolder, id) => {
-    if (Array.isArray(item)) {
-      return item.map((i) => addNode(i, nFolder, id));
-    }
-    if (typeof item === "object" && item !== null) {
-      const newObj = { ...item };
-      if (newObj.id === id) {
-        if (newObj.children?.length) {
-          newObj.children.push(nFolder);
-        } else {
-          newObj.children = [nFolder];
+      if (typeof folder === "object" && folder !== null) {
+        if (folder.children) {
+          folder.children = recurssionFn(folder.children);
         }
-      } else {
-        if (item.children) {
-          newObj.children = addNode(item.children, nFolder, id);
-        }
+        return folder;
       }
-      return newObj;
-    }
-  };
+    };
+
+    const newFiles = recurssionFn(fileData);
+    setFileData(newFiles);
+  }
+
+  function addFolderNode(id) {
+    const newFolder = {
+      id: "ad" + Math.random() * 1000,
+      name: "NEWLY ADDED FOLDER" + Math.random() * 1000,
+    };
+
+    const recurssionFn = (element) => {
+      if (Array.isArray(element)) {
+        return element.map((e) => recurssionFn(e));
+      }
+
+      if (typeof element === "object" && element !== null) {
+        if (element.id === id) {
+          if (element.children?.length) {
+            element.children = [...element.children, newFolder];
+          } else {
+            element.children = [newFolder];
+          }
+          return element;
+        }
+
+        if (element.children?.length) {
+          element.children = recurssionFn(element.children);
+        }
+
+        return element;
+      }
+    };
+
+    const newFiles = recurssionFn(fileData);
+    setFileData(newFiles);
+  }
 
   return (
     <div>

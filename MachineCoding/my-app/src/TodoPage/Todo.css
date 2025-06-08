@@ -1,0 +1,7 @@
+.list-item {
+  margin: 5px;
+}
+
+.list-item .strike {
+  text-decoration: line-through;
+}

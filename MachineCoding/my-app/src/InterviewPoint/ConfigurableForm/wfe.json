@@ -1,0 +1,1086 @@
+{
+  "startup": {
+    "startingPageId": "chooseReasonsPage"
+  },
+  "pages": {
+    "chooseReasonsPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We're sorry you're thinking of leaving!",
+      "subheading": "",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "selectReasonForm",
+      "id": "chooseReasonsPage"
+    },
+    "ourTeamIsDownsizingPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We might be able to help!",
+      "subheading": "We've found some options to help you save money and continue using Postman productively.",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "ourTeamIsDownsizingForm",
+      "id": "ourTeamIsDownsizingPage"
+    },
+    "tooCostlyForOurCurrentUsagePage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We might be able to help!",
+      "subheading": "We've found some options to help you save money and continue using Postman productively.",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "tooCostlyForOurCurrentUsageForm",
+      "id": "tooCostlyForOurCurrentUsagePage"
+    },
+    "overallCostDidNotFitInOurBudgetPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We might be able to help!",
+      "subheading": "We've found some options to help you save money and continue using Postman productively.",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "overallBudgetDidNotFitInOurBudgetForm",
+      "id": "overallCostDidNotFitInOurBudgetPage"
+    },
+    "raiseCancellationRequestPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We're sorry to hear that!",
+      "subheading": null,
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "raiseCancellationRequestForm",
+      "id": "raiseCancellationRequestPage"
+    },
+    "raiseCancellationRequestWithWeAreSadToSeeYouGoHeadingPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We’re sad to see you go!",
+      "subheading": null,
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "raiseCancellationRequestForm",
+      "id": "raiseCancellationRequestWithWeAreSadToSeeYouGoHeadingPage"
+    },
+    "reduceExcessLicensesPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We might be able to help!",
+      "subheading": "We'd love to help you save money and continue using Postman productively.",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "reduceExcessLicensesForm",
+      "id": "reduceExcessLicensesPage"
+    },
+    "connectWithExpertsAndMorePage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We might be able to help!",
+      "subheading": "We'd love to help your team to get more out of Postman.",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "connectWithAnExpertForm",
+      "id": "connectWithExpertsAndMorePage"
+    },
+    "weAreSadToSeeYouGoPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We're sad to see you go!",
+      "subheading": null,
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "raiseCancellationRequestFormWithAlternativeSolution",
+      "id": "weAreSadToSeeYouGoPage"
+    },
+    "sharePaymentAndContactSupportPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We might be able to help!",
+      "subheading": "Would it help if we share a link that you can use to pay instantly?",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "sharePaymentAndContactSupportForm",
+      "id": "sharePaymentAndContactSupportPage"
+    },
+    "updatePaymentMethodAndContactSupportPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We might be able to help!",
+      "subheading": "If you're having trouble with your credit card, verify if your details are up-to-date or try adding a new card.",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "updatePaymentMethodAndContactSupportForm",
+      "id": "updatePaymentMethodAndContactSupportPage"
+    },
+    "reviewTeamAndContactSupportPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [],
+      "heading": "We might be able to help!",
+      "subheading": "Your invoice amount may have increased due the purchase of 0 additional seats via <a href='https://learning.postman.com/docs/billing/billing/#using-auto-flex' target='_blank'>auto-flex</a> or adjustments to <a href='https://learning.postman.com/docs/billing/billing/#managing-resources' target='_blank'>resource usage</a>.",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "reviewTeamAndContactSupportForm",
+      "id": "reviewTeamAndContactSupportPage"
+    },
+    "yourDataSecurityMattersPage": {
+      "ctas": [
+        "continueSelf",
+        "back"
+      ],
+      "cards": [
+        "postmanVault",
+        "twoFactorAuthentication",
+        "socCompliance"
+      ],
+      "heading": "Your data security matters to us",
+      "subheading": " Discover how Postman helps you keep your data and credentials safe.",
+      "illustration": "page-illustration-400-error",
+      "startingFormId": "returnToWorkspaceOrContactSupportForm",
+      "id": "yourDataSecurityMattersPage"
+    }
+  },
+  "forms": {
+    "selectReasonForm": {
+      "type": "dropdown",
+      "template": {
+        "label": "Help us understand what brought you here",
+        "options": [
+          "selectReasonForm_paymentOrBillingIssues",
+          "selectReasonForm_budgetConstraint",
+          "selectReasonForm_productsGapOrConcerns",
+          "selectReasonForm_notGettingValueWeExpected",
+          "selectReasonForm_othersReason"
+        ],
+        "placeholder": "Select reason"
+      },
+      "id": "selectReasonForm"
+    },
+    "budgetConstraintForm": {
+      "type": "radio",
+      "template": {
+        "label": "Can you tell us a little more?",
+        "options": [
+          "budgetConstraintForm_ourBusinessIsShuttingDown",
+          "budgetConstraintForm_ourTeamIsDownsizing",
+          "budgetConstraintForm_overallBudgetDidNotFitInOurBudget",
+          "budgetConstraintForm_OtherReason"
+        ]
+      },
+      "id": "budgetConstraintForm"
+    },
+    "notGettingValueWeExpectedForm": {
+      "type": "radio",
+      "template": {
+        "label": "Can you tell us a little more?",
+        "options": [
+          "notGettingValueWeExpectedForm_tooCostlyForOurCurrentUsage",
+          "notGettingValueWeExpectedForm_notMakingFullUseOfPaidFeatures",
+          "notGettingValueWeExpectedForm_notUsingOurLicenses"
+        ]
+      },
+      "id": "notGettingValueWeExpectedForm"
+    },
+    "connectWithAnExpertForm": {
+      "type": "radio",
+      "template": {
+        "label": "",
+        "options": [
+          "connectWithExpertsAndMoreForm_connectWithAnExpert",
+          "connectWithExpertsAndMoreForm_saveXAnnuallyMoreWithBasic",
+          "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+        ]
+      },
+      "id": "connectWithAnExpertForm"
+    },
+    "reduceExcessLicensesForm": {
+      "type": "radio",
+      "template": {
+        "label": "",
+        "options": [
+          "reduceExcessLicensesForm_reduceExcessLicenses",
+          "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+        ]
+      },
+      "id": "reduceExcessLicensesForm"
+    },
+    "ourTeamIsDownsizingForm": {
+      "type": "radio",
+      "template": {
+        "label": "",
+        "options": [
+          "commonOption_reduceYourLicenses",
+          "ourTeamIsDownsizingForm_saveMoreWithBasic",
+          "ourTeamIsDownsizingForm_stillLikeToCancel"
+        ]
+      },
+      "id": "ourTeamIsDownsizingForm"
+    },
+    "tooCostlyForOurCurrentUsageForm": {
+      "type": "radio",
+      "template": {
+        "label": "",
+        "options": [
+          "commonOption_reduceYourLicenses",
+          "tooCostlyForOurCurrentUsageForm_saveMoreWithBasicUpToX",
+          "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+        ]
+      },
+      "id": "tooCostlyForOurCurrentUsageForm"
+    },
+    "raiseCancellationRequestForm": {
+      "type": "textarea",
+      "banner": "moveToFreePlanBanner",
+      "template": {
+        "cta": [
+          "raiseCancellationReq",
+          "back"
+        ],
+        "elements": [
+          {
+            "id": "feedback_form",
+            "label": "Do you have any feedback for us?",
+            "isResizable": true
+          }
+        ],
+        "isRequired": false,
+        "nextFormId": null,
+        "nextPageId": null
+      },
+      "id": "raiseCancellationRequestForm"
+    },
+    "raiseCancellationRequestFormWithWeAreSadToSeeYouGo": {
+      "type": "textarea",
+      "banner": "moveToFreePlanBanner",
+      "template": {
+        "cta": [
+          "raiseCancellationReq",
+          "back"
+        ],
+        "elements": [
+          {
+            "id": "feedback_form",
+            "label": "We're sad to see you go! Do you have any feedback for us?",
+            "isResizable": true
+          }
+        ],
+        "isRequired": false,
+        "nextFormId": null,
+        "nextPageId": null
+      },
+      "id": "raiseCancellationRequestFormWithWeAreSadToSeeYouGo"
+    },
+    "raiseCancellationRequestFormWithAlternativeSolutionFieldSadToSeeYouGoHeading": {
+      "type": "textarea",
+      "banner": "moveToFreePlanBanner",
+      "template": {
+        "cta": [
+          "raiseCancellationReq",
+          "back"
+        ],
+        "elements": [
+          {
+            "id": "feedback_form",
+            "label": "We're sad to see you go! Do you have any feedback for us?",
+            "isResizable": true
+          },
+          {
+            "id": "alternative_solution_form",
+            "rows": 1,
+            "label": "Are you considering any alternative solution?",
+            "isResizable": true
+          }
+        ],
+        "isRequired": false,
+        "nextFormId": null,
+        "nextPageId": null
+      },
+      "id": "raiseCancellationRequestFormWithAlternativeSolutionFieldSadToSeeYouGoHeading"
+    },
+    "raiseCancellationRequestFormWithAlternativeSolution": {
+      "type": "textarea",
+      "banner": "moveToFreePlanBanner",
+      "template": {
+        "cta": [
+          "raiseCancellationReq",
+          "back"
+        ],
+        "elements": [
+          {
+            "id": "feedback_form",
+            "label": "Do you have any feedback for us?",
+            "isResizable": true
+          },
+          {
+            "id": "alternative_solution_form",
+            "rows": 1,
+            "label": "Are you considering any alternative solution?",
+            "isResizable": true
+          }
+        ],
+        "isRequired": false,
+        "nextFormId": null,
+        "nextPageId": null
+      },
+      "id": "raiseCancellationRequestFormWithAlternativeSolution"
+    },
+    "overallBudgetDidNotFitInOurBudgetForm": {
+      "type": "radio",
+      "template": {
+        "label": "",
+        "options": [
+          "overallBudgetDidNotFitInOurBudgetForm_reduceExcessLicenses",
+          "overallBudgetDidNotFitInOurBudgetForm_saveMoreWithBasic",
+          "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+        ]
+      },
+      "id": "overallBudgetDidNotFitInOurBudgetForm"
+    },
+    "paymentOrBillingIssuesForm": {
+      "type": "radio",
+      "template": {
+        "label": "Can you tell us more?",
+        "options": [
+          "paymentOrBillingIssuesForm_issueWithRenewalOrPaymentMethod",
+          "paymentOrBillingIssuesForm_problemWithOurPaymentMethod",
+          "paymentOrBillingIssuesForm_ourInvoiceWasHigherThanExpected",
+          "paymentOrBillingIssuesForm_paymentOrBillingIssueOther"
+        ]
+      },
+      "id": "paymentOrBillingIssuesForm"
+    },
+    "sharePaymentAndContactSupportForm": {
+      "type": "radio",
+      "template": {
+        "label": "",
+        "options": [
+          "sharePaymentAndContactSupportForm_sharePaymentLink",
+          "commonOption_contactSupport",
+          "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+        ]
+      },
+      "id": "sharePaymentAndContactSupportForm"
+    },
+    "updatePaymentMethodAndContactSupportForm": {
+      "type": "radio",
+      "template": {
+        "label": "",
+        "options": [
+          "updatePaymentMethodAndContactSupportForm_updatePaymentMethod",
+          "commonOption_contactSupport",
+          "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+        ]
+      },
+      "id": "updatePaymentMethodAndContactSupportForm"
+    },
+    "reviewTeamAndContactSupportForm": {
+      "type": "radio",
+      "template": {
+        "label": "",
+        "options": [
+          "reviewTeamAndContactSupportForm_reviewAndManageTeam",
+          "commonOption_contactSupport",
+          "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+        ]
+      },
+      "id": "reviewTeamAndContactSupportForm"
+    },
+    "productsGapOrConcernsForm": {
+      "type": "radio",
+      "template": {
+        "label": "Can you tell us a little more?",
+        "options": [
+          "productsGapOrConcernsForm_missingFeatures",
+          "productsGapOrConcernsForm_performanceIssues",
+          "productsGapOrConcernsForm_questionsAboutDataSecurityAndEncryption"
+        ]
+      },
+      "id": "productsGapOrConcernsForm"
+    },
+    "returnToWorkspaceOrContactSupportForm": {
+      "type": "radio",
+      "template": {
+        "label": "What would you like to do next?",
+        "options": [
+          "returnToWorkspaceOrContactSupportForm_returnToWorkspace",
+          "returnToWorkspaceOrContactSupportForm_connectWithAnExpertToDiscussSecurityConcerns",
+          "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+        ]
+      },
+      "id": "returnToWorkspaceOrContactSupportForm"
+    },
+    "othersReasonForm": {
+      "type": "radio",
+      "template": {
+        "label": "Can you tell us about your specific concern?",
+        "options": [
+          "othersReasonForm_ourApiProjectEnded",
+          "othersReasonForm_movingToDifferentPostmanAccount",
+          "othersReasonForm_didNotMeanToPurchasePlan",
+          "othersReasonForm_somethingElse"
+        ]
+      },
+      "id": "othersReasonForm"
+    },
+    "willNeedPostmanAgainForm": {
+      "type": "radio",
+      "template": {
+        "label": "Do you think your team will need to use Postman again?",
+        "options": [
+          "willNeedPostmanAgainForm_maybeInThreeMonths",
+          "willNeedPostmanAgainForm_notInNearFuture",
+          "willNeedPostmanAgainForm_notSureYet"
+        ]
+      },
+      "id": "willNeedPostmanAgainForm"
+    }
+  },
+  "options": {
+    "notGettingValueWeExpectedForm_notUsingOurLicenses": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "We weren't using all our licenses",
+      "value": "we-were-not-using-all-our-licenses",
+      "nextFormId": null,
+      "nextPageId": "reduceExcessLicensesPage",
+      "id": "notGettingValueWeExpectedForm_notUsingOurLicenses"
+    },
+    "willNeedPostmanAgainForm_maybeInThreeMonths": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Yes, maybe within the next three months.",
+      "value": "yes-maybe-within-the-next-three-months",
+      "nextFormId": null,
+      "nextPageId": "raiseCancellationRequestWithWeAreSadToSeeYouGoHeadingPage",
+      "id": "willNeedPostmanAgainForm_maybeInThreeMonths"
+    },
+    "willNeedPostmanAgainForm_notInNearFuture": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "No, not in the near future.",
+      "value": "no-not-in-the-near-future",
+      "nextFormId": null,
+      "nextPageId": "raiseCancellationRequestWithWeAreSadToSeeYouGoHeadingPage",
+      "id": "willNeedPostmanAgainForm_notInNearFuture"
+    },
+    "willNeedPostmanAgainForm_notSureYet": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Not sure yet, it's too soon to tell.",
+      "value": "not-sure-yet-its-too-soon-to-tell",
+      "nextFormId": null,
+      "nextPageId": "raiseCancellationRequestWithWeAreSadToSeeYouGoHeadingPage",
+      "id": "willNeedPostmanAgainForm_notSureYet"
+    },
+    "othersReasonForm_ourApiProjectEnded": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "Our API project ended",
+      "value": "our-api-project-ended",
+      "nextFormId": "willNeedPostmanAgainForm",
+      "nextPageId": null,
+      "id": "othersReasonForm_ourApiProjectEnded"
+    },
+    "othersReasonForm_movingToDifferentPostmanAccount": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "We're moving to another Postman account",
+      "value": "we-re-moving-to-another-postman-account",
+      "nextFormId": null,
+      "nextPageId": "raiseCancellationRequestWithWeAreSadToSeeYouGoHeadingPage",
+      "id": "othersReasonForm_movingToDifferentPostmanAccount"
+    },
+    "othersReasonForm_didNotMeanToPurchasePlan": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "We didn't mean to purchase a plan",
+      "value": "we-did-not-mean-to-purchase-a-plan",
+      "nextFormId": null,
+      "nextPageId": "raiseCancellationRequestWithWeAreSadToSeeYouGoHeadingPage",
+      "id": "othersReasonForm_didNotMeanToPurchasePlan"
+    },
+    "othersReasonForm_somethingElse": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Something else",
+      "value": "something-else",
+      "nextFormId": null,
+      "nextPageId": "raiseCancellationRequestWithWeAreSadToSeeYouGoHeadingPage",
+      "id": "othersReasonForm_somethingElse"
+    },
+    "selectReasonForm_budgetConstraint": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "Budget constraints",
+      "value": "budget-constraints",
+      "nextFormId": "budgetConstraintForm",
+      "nextPageId": null,
+      "id": "selectReasonForm_budgetConstraint"
+    },
+    "selectReasonForm_notGettingValueWeExpected": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "Not getting the value we expected",
+      "value": "not-getting-the-value-we-expected",
+      "nextFormId": "notGettingValueWeExpectedForm",
+      "nextPageId": null,
+      "id": "selectReasonForm_notGettingValueWeExpected"
+    },
+    "notGettingValueWeExpectedForm_tooCostlyForOurCurrentUsage": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Too costly for our current usage",
+      "value": "too-costly-for-our-current-usage",
+      "nextFormId": null,
+      "nextPageId": "tooCostlyForOurCurrentUsagePage",
+      "id": "notGettingValueWeExpectedForm_tooCostlyForOurCurrentUsage"
+    },
+    "notGettingValueWeExpectedForm_notMakingFullUseOfPaidFeatures": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "We weren't making full use of paid features",
+      "value": "we-were-not-making-full-use-of-paid-features",
+      "nextFormId": null,
+      "nextPageId": "connectWithExpertsAndMorePage",
+      "id": "notGettingValueWeExpectedForm_notMakingFullUseOfPaidFeatures"
+    },
+    "connectWithExpertsAndMoreForm_connectWithAnExpert": {
+      "cta": [
+        "connectWithUs",
+        "back"
+      ],
+      "label": "Connect with a product expert to use Postman more effectively",
+      "value": "connect-with-a-product-expert-to-use-postman-more-effectively",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "connectWithExpertsAndMoreForm_connectWithAnExpert"
+    },
+    "selectReasonForm_paymentOrBillingIssues": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "Payment or billing issues",
+      "value": "payment-or-billing-issues",
+      "nextFormId": "paymentOrBillingIssuesForm",
+      "nextPageId": null,
+      "id": "selectReasonForm_paymentOrBillingIssues"
+    },
+    "selectReasonForm_productsGapOrConcerns": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "Missing features and product concerns",
+      "value": "missing-features-and-product-concerns",
+      "nextFormId": "productsGapOrConcernsForm",
+      "nextPageId": null,
+      "id": "selectReasonForm_productsGapOrConcerns"
+    },
+    "selectReasonForm_othersReason": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "Others",
+      "value": "others",
+      "nextFormId": "othersReasonForm",
+      "nextPageId": null,
+      "id": "selectReasonForm_othersReason"
+    },
+    "budgetConstraintForm_ourBusinessIsShuttingDown": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Our business is shutting down",
+      "value": "our-business-is-shutting-down",
+      "nextFormId": null,
+      "nextPageId": "raiseCancellationRequestPage",
+      "id": "budgetConstraintForm_ourBusinessIsShuttingDown"
+    },
+    "budgetConstraintForm_ourTeamIsDownsizing": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Our team is downsizing",
+      "value": "our-team-is-downsizing",
+      "nextFormId": null,
+      "nextPageId": "ourTeamIsDownsizingPage",
+      "id": "budgetConstraintForm_ourTeamIsDownsizing"
+    },
+    "budgetConstraintForm_overallBudgetDidNotFitInOurBudget": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Very Expensive",
+      "value": "the-overall-cost-did-not-fit-in-our-budget",
+      "nextFormId": null,
+      "nextPageId": "overallCostDidNotFitInOurBudgetPage",
+      "id": "budgetConstraintForm_overallBudgetDidNotFitInOurBudget"
+    },
+    "budgetConstraintForm_OtherReason": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Other",
+      "value": "other",
+      "nextFormId": null,
+      "nextPageId": "weAreSadToSeeYouGoPage",
+      "id": "budgetConstraintForm_OtherReason"
+    },
+    "commonOption_reduceYourLicenses": {
+      "cta": [
+        "reduceYourLicenses",
+        "back"
+      ],
+      "label": "Reduce your licenses",
+      "value": "reduce-your-licenses",
+      "helperText": "Align your plan with your current team size to avoid losing progress on your API projects.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "commonOption_reduceYourLicenses"
+    },
+    "reduceExcessLicensesForm_reduceExcessLicenses": {
+      "cta": [
+        "editPlanNext",
+        "back"
+      ],
+      "label": "Reduce excess licenses",
+      "value": "reduce-excess-licenses",
+      "helperText": "Review your team for underutilized licenses to reduce costs and avoid losing progress on API projects.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "reduceExcessLicensesForm_reduceExcessLicenses"
+    },
+    "overallBudgetDidNotFitInOurBudgetForm_reduceExcessLicenses": {
+      "cta": [
+        "editPlanNext",
+        "back"
+      ],
+      "label": "Reduce excess licenses",
+      "value": "reduce-excess-licenses",
+      "helperText": "Review your team for underused licenses to cut costs and avoid losing progress on API projects.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "overallBudgetDidNotFitInOurBudgetForm_reduceExcessLicenses"
+    },
+    "connectWithExpertsAndMoreForm_saveXAnnuallyMoreWithBasic": {
+      "cta": [
+        "editPlanNext",
+        "back"
+      ],
+      "label": "Save up to $900 per year with Basic",
+      "value": "save-up-to-x-per-year-with-basic",
+      "helperText": "Switch to the Basic plan to keep essential features and continue collaborating on APIs. Save up to $900 annually.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "connectWithExpertsAndMoreForm_saveXAnnuallyMoreWithBasic"
+    },
+    "ourTeamIsDownsizingForm_saveMoreWithBasic": {
+      "cta": [
+        "editPlanNext",
+        "back"
+      ],
+      "label": "Save more with Basic",
+      "value": "save-more-with-basic",
+      "helperText": "Switch to the Basic plan to keep essential features and continue collaborating on APIs.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "ourTeamIsDownsizingForm_saveMoreWithBasic"
+    },
+    "tooCostlyForOurCurrentUsageForm_saveMoreWithBasicUpToX": {
+      "cta": [
+        "editPlanNext",
+        "back"
+      ],
+      "label": "Save up to $900 per year with Basic",
+      "value": "save-up-to-y-per-year-with-basic",
+      "helperText": "Switch to the Basic plan to keep essential features and continue collaborating on APIs.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "tooCostlyForOurCurrentUsageForm_saveMoreWithBasicUpToX"
+    },
+    "overallBudgetDidNotFitInOurBudgetForm_saveMoreWithBasic": {
+      "cta": [
+        "editPlanNext",
+        "back"
+      ],
+      "label": "Save up to $900 per year with Basic",
+      "value": "save-up-to-x-per-year-with-basic",
+      "helperText": "Switch to the Basic plan to keep essential features and continue collaborating on APIs.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "overallBudgetDidNotFitInOurBudgetForm_saveMoreWithBasic"
+    },
+    "ourTeamIsDownsizingForm_stillLikeToCancel": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "I'd still like to cancel",
+      "value": "id-still-like-to-cancel",
+      "nextFormId": "raiseCancellationRequestFormWithWeAreSadToSeeYouGo",
+      "nextPageId": null,
+      "id": "ourTeamIsDownsizingForm_stillLikeToCancel"
+    },
+    "stillLikeToCancelWithoutHelperText": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "I'd still like to cancel",
+      "value": "id-still-like-to-cancel-without-helper-text",
+      "nextFormId": "raiseCancellationRequestForm",
+      "nextPageId": null,
+      "id": "stillLikeToCancelWithoutHelperText"
+    },
+    "commonOption_stillLikeToCancelWithAlternativeSolutionField": {
+      "cta": [
+        "continueSelf",
+        "back"
+      ],
+      "label": "I'd still like to cancel",
+      "value": "id-still-like-to-cancel-without-helper-text",
+      "nextFormId": "raiseCancellationRequestFormWithAlternativeSolutionFieldSadToSeeYouGoHeading",
+      "nextPageId": null,
+      "id": "commonOption_stillLikeToCancelWithAlternativeSolutionField"
+    },
+    "paymentOrBillingIssuesForm_issueWithRenewalOrPaymentMethod": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Issue with renewal or payment processing",
+      "value": "issue-with-renewal-or-payment-processing",
+      "nextFormId": null,
+      "nextPageId": "sharePaymentAndContactSupportPage",
+      "id": "paymentOrBillingIssuesForm_issueWithRenewalOrPaymentMethod"
+    },
+    "paymentOrBillingIssuesForm_problemWithOurPaymentMethod": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Problem with our payment method",
+      "value": "problem-with-our-payment-method",
+      "nextFormId": null,
+      "nextPageId": "updatePaymentMethodAndContactSupportPage",
+      "id": "paymentOrBillingIssuesForm_problemWithOurPaymentMethod"
+    },
+    "paymentOrBillingIssuesForm_ourInvoiceWasHigherThanExpected": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Our invoice was higher than expected",
+      "value": "our-invoice-was-higher-than-expected",
+      "nextFormId": null,
+      "nextPageId": "reviewTeamAndContactSupportPage",
+      "id": "paymentOrBillingIssuesForm_ourInvoiceWasHigherThanExpected"
+    },
+    "paymentOrBillingIssuesForm_paymentOrBillingIssueOther": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Other",
+      "value": "payment-or-billing-issue-other",
+      "nextFormId": null,
+      "nextPageId": "weAreSadToSeeYouGoPage",
+      "id": "paymentOrBillingIssuesForm_paymentOrBillingIssueOther"
+    },
+    "sharePaymentAndContactSupportForm_sharePaymentLink": {
+      "cta": [
+        "sendPaymentLink",
+        "back"
+      ],
+      "label": "Share payment link",
+      "value": "share-payment-link",
+      "helperText": "We'll send your billing contact, krishna.malhotra+negativeoption1@postman.com, a link to make the payment when it is due.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "sharePaymentAndContactSupportForm_sharePaymentLink"
+    },
+    "commonOption_contactSupport": {
+      "cta": [
+        "contactSupportCta",
+        "back"
+      ],
+      "label": "Help me get in touch with customer support",
+      "value": "help-me-get-in-touch-with-customer-support",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "commonOption_contactSupport"
+    },
+    "updatePaymentMethodAndContactSupportForm_updatePaymentMethod": {
+      "cta": [
+        "updatePaymentMethodCta",
+        "back"
+      ],
+      "label": "Update payment method",
+      "value": "update-payment-method",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "updatePaymentMethodAndContactSupportForm_updatePaymentMethod"
+    },
+    "reviewTeamAndContactSupportForm_reviewAndManageTeam": {
+      "cta": [
+        "manageTeam",
+        "back"
+      ],
+      "label": "Review and manage my team",
+      "value": "review-and-manage-my-team",
+      "helperText": "The adjusted invoice will appear in your next billing cycle.",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "reviewTeamAndContactSupportForm_reviewAndManageTeam"
+    },
+    "productsGapOrConcernsForm_missingFeatures": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Missing features",
+      "value": "missing-features",
+      "nextFormId": null,
+      "nextPageId": "weAreSadToSeeYouGoPage",
+      "id": "productsGapOrConcernsForm_missingFeatures"
+    },
+    "productsGapOrConcernsForm_performanceIssues": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Performance issues",
+      "value": "performance-issues",
+      "nextFormId": null,
+      "nextPageId": "weAreSadToSeeYouGoPage",
+      "id": "productsGapOrConcernsForm_performanceIssues"
+    },
+    "productsGapOrConcernsForm_questionsAboutDataSecurityAndEncryption": {
+      "cta": [
+        "continueNext",
+        "back"
+      ],
+      "label": "Questions about data security and encryption",
+      "value": "questions-about-data-security-and-encryption",
+      "nextFormId": null,
+      "nextPageId": "yourDataSecurityMattersPage",
+      "id": "productsGapOrConcernsForm_questionsAboutDataSecurityAndEncryption"
+    },
+    "returnToWorkspaceOrContactSupportForm_returnToWorkspace": {
+      "cta": [
+        "returnToWorkspaceCta",
+        "back"
+      ],
+      "label": "Return to my workspace",
+      "value": "return-to-workspace",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "returnToWorkspaceOrContactSupportForm_returnToWorkspace"
+    },
+    "returnToWorkspaceOrContactSupportForm_connectWithAnExpertToDiscussSecurityConcerns": {
+      "cta": [
+        "connectWithAnExpertCta",
+        "back"
+      ],
+      "label": "Connect with an expert to discuss my security questions",
+      "value": "connect-with-an-expert-to-discuss-my-security-questions",
+      "nextFormId": null,
+      "nextPageId": null,
+      "id": "returnToWorkspaceOrContactSupportForm_connectWithAnExpertToDiscussSecurityConcerns"
+    }
+  },
+  "ctas": {
+    "reduceYourLicenses": {
+      "text": "Edit Plan",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "open-billing-change-plan",
+      "id": "reduceYourLicenses"
+    },
+    "continuePlaceholder": {
+      "text": "Continue",
+      "target": "self",
+      "ctaType": "primary",
+      "actionId": null,
+      "id": "continuePlaceholder"
+    },
+    "continueSelf": {
+      "text": "Continue",
+      "target": "self",
+      "ctaType": "primary",
+      "actionId": "load-next-form",
+      "id": "continueSelf"
+    },
+    "continueNext": {
+      "text": "Continue",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "load-next-form",
+      "id": "continueNext"
+    },
+    "connectWithUs": {
+      "text": "Connect with Us",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "connect-with-us",
+      "id": "connectWithUs"
+    },
+    "back": {
+      "text": "Back",
+      "target": "next",
+      "ctaType": "secondary",
+      "actionId": "back",
+      "id": "back"
+    },
+    "raiseCancellationReq": {
+      "text": "Raise Cancellation Request",
+      "target": "self",
+      "ctaType": "destructive",
+      "actionId": "raise-cancellation-request",
+      "id": "raiseCancellationReq"
+    },
+    "editPlanNext": {
+      "text": "Edit Plan",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "edit-plan",
+      "id": "editPlanNext"
+    },
+    "sendPaymentLink": {
+      "text": "Send Payment Link",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "send-payment-link",
+      "id": "sendPaymentLink"
+    },
+    "contactSupportCta": {
+      "text": "Contact Support",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "contact-support",
+      "id": "contactSupportCta"
+    },
+    "updatePaymentMethodCta": {
+      "text": "Update Payment Method",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "update-payment-method",
+      "id": "updatePaymentMethodCta"
+    },
+    "manageTeam": {
+      "text": "Manage Team",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "manage-team",
+      "id": "manageTeam"
+    },
+    "returnToWorkspaceCta": {
+      "text": "Return to My Team Workspace",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "return-to-my-team-workspace",
+      "id": "returnToWorkspaceCta"
+    },
+    "connectWithAnExpertCta": {
+      "text": "Connect with an Expert",
+      "target": "next",
+      "ctaType": "primary",
+      "actionId": "connect-with-an-expert",
+      "id": "connectWithAnExpertCta"
+    }
+  },
+  "banners": {
+    "moveToFreePlanBanner": {
+      "id": "moveToFreePlanBanner",
+      "status": "warning",
+      "content": "Your team will be moved to the Free plan on 09 May, 2026 and will no longer be billed.",
+      "placement": "bottom"
+    },
+    "banner2": {
+      "id": "banner2",
+      "status": "info",
+      "content": "Limited-time discount: Save 20% by switching to the Basic plan today!",
+      "placement": "top"
+    }
+  },
+  "cards": {
+    "socCompliance": {
+      "id": "socCompliance",
+      "slug": "SOC compliance",
+      "type": "outline",
+      "content": "Postman is SOC 2 and 3, GDPR, and CCPA compliant",
+      "redirectTo": "https://security.postman.com/",
+      "illustration": "spot-illustration-file"
+    },
+    "postmanVault": {
+      "id": "postmanVault",
+      "slug": "Vault secret",
+      "type": "outline",
+      "content": "Vault secrets are encrypted with AES 256-bit encryption",
+      "redirectTo": "https://learning.postman.com/docs/sending-requests/postman-vault/postman-vault-secrets/",
+      "illustration": "spot-illustration-security"
+    },
+    "twoFactorAuthentication": {
+      "id": "twoFactorAuthentication",
+      "slug": "2FA",
+      "type": "outline",
+      "content": "We offer Two-Factor Authentication for account security",
+      "redirectTo": "https://blog.postman.com/secure-your-postman-account-with-two-factor-authentication/",
+      "illustration": "spot-illustration-authentication"
+    }
+  }
+}

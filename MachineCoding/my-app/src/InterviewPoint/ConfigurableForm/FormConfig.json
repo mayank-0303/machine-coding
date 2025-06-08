@@ -1,0 +1,174 @@
+{
+    "meta": {
+        "startingPageId": "first-page"
+    }, 
+    "pages": {
+        "first-page": {
+            "startingFormId": "basic-info-form-id"
+        },
+        "second-page": {
+            "startingFormId": "school-info-form-id"
+        }
+    },
+    "form-types": {
+        "basic-info-form-id": {
+            "id": "basic-info-form-id",
+            "name": "Profile Information",
+            "sub-name": "Enter Details",
+            "elements": [
+                {
+                    "id": "name-id",
+                    "label": "Name",
+                    "type": "input-text",
+                    "placeholder": "Enter name",
+                    "maxLength": 100,
+                    "minLength": 5,
+                    "required": true
+                },
+                {
+                    "id": "age-id",
+                    "label": "Age",
+                    "type": "input-radio",
+                    "required": true,
+                    "options": [
+                        "below-18",
+                        "above-18"
+                    ]
+                },
+                {
+                    "type": "dynamic form test which data will be set by backend",
+                    "value": "you have {{ SEaTS }}} seat"
+                }
+            ],
+            "buttons": [
+                "closeForm",
+                "submitForm"
+            ]
+        },
+        "school-info-form-id": {
+            "id": "school-info-form-id",
+            "elements": [
+                {
+                    "id": "school-name-id",
+                    "label": "School Name",
+                    "type": "input-text",
+                    "placeholder": "Enter school name",
+                    "maxLength": 200,
+                    "minLength": 10,
+                    "required": true
+                },
+                {
+                    "id": "school-course-id",
+                    "label": "Course",
+                    "type": "input-text",
+                    "placeholder": "Enter course",
+                    "maxLength": 20,
+                    "minLength": 3,
+                    "required": true
+                }
+            ]
+        },
+        "college-info-form-id": {
+            "id": "college-info-form-id",
+            "elements": [
+                {
+                    "id": "college-name-id",
+                    "label": "College Name",
+                    "type": "input-text",
+                    "placeholder": "Enter college name",
+                    "maxLength": 200,
+                    "minLength": 10,
+                    "required": true
+                },
+                {
+                    "id": "college-cgpa-id",
+                    "label": "CGPA",
+                    "type": "input-text",
+                    "placeholder": "Enter CGPA",
+                    "maxLength": 4,
+                    "minLength": 1,
+                    "required": true
+                }
+            ]
+        }
+    },
+    "buttons-types": {
+        "grey-btn": {
+            "color": "grey",
+            "border": "2px solid grey"
+        },
+        "prev-btn": {
+            "color": "yellow",
+            "border": "2px solid grey",
+            "pre": "<"
+        },
+        "next-btn": {
+            "color": "green",
+            "border": "2px solid grey",
+            "post": ">"
+        }
+    },
+    "options": {
+        "below-18": {
+            "id": "below-18",
+            "label": "Below 18?",
+            "value": "below-18",
+            "buttons": [
+                "closeForm",
+                "submitformDown"
+            ],
+            "nextFormId": "school-info-form-id",
+            "nextPageId": "null"
+        },
+        "above-18": {
+            "id": "above-18",
+            "label": "Above 18?",
+            "value": "above-18",
+            "buttons": [
+                "closeForm",
+                "submitformNext"
+            ],
+            "nextFormId": "null",
+            "nextPageId": "second-page"
+        }
+    },
+    "buttons": {
+        "closeForm": {
+            "type": "prev-btn",
+            "label": "Close",
+            "actionId": "closeForm"
+        },
+        "submitformDown": {
+            "type": "next-btn",
+            "label": "Next",
+            "actionId": "renderForm",
+            "target": "self"
+        },
+        "submitformNext": {
+            "type": "next-btn",
+            "label": "Next",
+            "actionId": "renderForm"
+        },
+        "submitForm": {
+            "type": "next-btn",
+            "label": "Submit",
+            "actionId": "submmitForm"
+        },
+        "editUserProfile": {
+            "type": "next-btn",
+            "label": "edit user profile",
+            "actionId": "redirecctToUserProfile"
+        }
+    }
+}
+
+
+//"meta": {
+    //     "startingPageId": "first-page"
+    // }, 
+    // could be changed from backedn depending upon the sub model just like adding dynamic data
+// To add the functionality for previous, we keep on 
+// in my case i can resuse the form, as next cta is specififed and in my scenrio lets say 
+// in one flow the form appeared at 1st step , in other 4th , in other 5th ,
+// but once the form came further steps were same in all so no worries.
+// and previos logic is handled at frontend so no issues.

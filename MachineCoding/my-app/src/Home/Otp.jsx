@@ -3,6 +3,8 @@ import "./Otp.css";
 
 // Enhancements that could be done rather than accessing children with ids , use reference, how to do it
 // its simple like you used to go in 3 years back , considering ref.current as a mao and storing all the refs there
+
+//i also wrote this in sandbox with onPaste as well
 const Otp = ({ count }) => {
   const otpId = useId();
   const [otpvalue, setOtpvalue] = useState(
@@ -11,6 +13,10 @@ const Otp = ({ count }) => {
   const [focussedInput, setFI] = useState(0);
 
   const refNodes = useRef({});
+
+  const otpGenerated = generateOTP(5);
+
+  console.log(otpGenerated, "otp generated");
 
   useEffect(() => {
     document.getElementById(`otp-${otpId}-${0}`).focus();
@@ -57,6 +63,13 @@ const Otp = ({ count }) => {
         />
       ))}
     </div>
+  );
+};
+
+const generateOTP = (length) => {
+  return Array.from({ length }).reduce(
+    (final) => final + Math.floor(Math.random() * 10),
+    ""
   );
 };
 
